@@ -5,7 +5,7 @@ This board steps down a higher DC voltage (7V–40V) to a stable 5V output using
 LM2596T-5 switching regulator IC.
 
 ---
-
+ 
 ## Overview
 
 Buck converters are switching regulators that efficiently step down voltage with
