@@ -5,7 +5,7 @@ This board steps down a higher DC voltage (7V–40V) to a stable 5V output using
 LM2596T-5 switching regulator IC.
 
 ---
- 
+
 ## Overview
 
 Buck converters are switching regulators that efficiently step down voltage with
@@ -22,7 +22,26 @@ The board includes:
 
 ---
 
-## Schematic
+## PCB Images
+
+### Schematic
+![Schematic](images/schematic.png)
+
+### 3D Tilted View
+![Tilted View](images/tilted_view.png)
+
+### 3D Top View
+![Top View](images/top_view.png)
+
+### Footprint Assignments
+![Footprints](images/footprints.png)
+
+### PCB Editor View
+![PCB Editor View](images/pcb_editer_view.png)
+
+---
+
+## Schematic Overview
 
 The circuit follows the standard LM2596 application circuit:
 - **VIN** receives input from J2 screw terminal through C1 (680µF filter cap)
@@ -54,37 +73,14 @@ The circuit follows the standard LM2596 application circuit:
 
 ## Specifications
 
-| Parameter        | Value          |
-|-----------------|----------------|
-| Input Voltage   | 7V – 40V DC    |
-| Output Voltage  | 5V DC (Fixed)  |
-| Max Output Current | Up to 3A    |
-| Switching Frequency | 150kHz     |
-| Efficiency      | Up to ~85%     |
-| Inductor        | 33µH           |
-| PCB Size        | ~95mm x 60mm   |
-
----
-
-## PCB Design
-
-- Designed entirely in **KiCad**
-- Through-hole components only (beginner friendly)
-- Single or double layer routing
-- Screw terminals on both input and output sides for easy prototyping
-- Components labeled and silkscreened for easy assembly
-
-### 3D Views
-
-
-
-**Top View**
-
-![Top View](images/top_view.png)
-
-**Isometric View**
-
-![Isometric View](images/iso_view.png)
+| Parameter           | Value          |
+|--------------------|----------------|
+| Input Voltage      | 7V – 40V DC    |
+| Output Voltage     | 5V DC (Fixed)  |
+| Max Output Current | Up to 3A       |
+| Switching Frequency| 150kHz         |
+| Efficiency         | Up to ~85%     |
+| Inductor           | 33µH           |
 
 ---
 
@@ -108,25 +104,25 @@ The **D2 LED** will light up when the output is active.
 
 ## How to Open in KiCad
 
-1. Install [KiCad](https://www.kicad.org/) (version 7 or later recommended)
+1. Install [KiCad](https://www.kicad.org/) (version 9 or later recommended)
 2. Clone or download this repository
-3. Open `*.kicad_pro` in KiCad
-4. Schematic is in `*.kicad_sch`
-5. PCB layout is in `*.kicad_pcb`
+3. Open `project 3.kicad_pro` in KiCad
+4. Schematic is in `project 3.kicad_sch`
+5. PCB layout is in `project 3.kicad_pcb`
 
 ---
 
 ## Generating Gerber Files
 
-Gerber files are not included in this repo but can be easily generated:
+Gerber files are not included but can be easily generated:
 
-1. Open `*.kicad_pcb` in KiCad PCB Editor
+1. Open `project 3.kicad_pcb` in KiCad PCB Editor
 2. Go to **File → Plot**
 3. Select layers: F.Cu, B.Cu, F.Silkscreen, B.Silkscreen,
    F.Mask, B.Mask, Edge.Cuts
 4. Click **Plot**
 5. Click **Generate Drill Files**
-6. Submit the output folder to your PCB manufacturer (JLCPCB, PCBWay, etc.)
+6. Submit output folder to your PCB manufacturer (JLCPCB, PCBWay, etc.)
 
 ---
 
