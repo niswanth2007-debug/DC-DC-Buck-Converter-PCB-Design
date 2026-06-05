@@ -35,7 +35,7 @@ The project was developed using KiCad and includes schematic capture, PCB layout
 
 ## Schematic
 
-![Schematic](Images/Schematic.png)
+![Schematic]("C:\Users\Balaji\Pictures\Screenshots\sch1.png")
 
 ---
 
