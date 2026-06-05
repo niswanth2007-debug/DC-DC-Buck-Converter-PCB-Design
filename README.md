@@ -76,7 +76,7 @@ The circuit follows the standard LM2596 application circuit:
 
 ### 3D Views
 
-> *(Add your 3D render screenshots here)*
+
 
 **Top View**
 
